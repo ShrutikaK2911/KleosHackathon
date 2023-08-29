@@ -7,7 +7,7 @@ function getBotResponse(input) {
     }else if (input == "7.0") {
         return "Not eligible for the company";
         else if (input == "9.9") {
-            return "Eligible for the company";
+            return "Not eligible for the company";
      else if (input == "db") {
         return "Proceed to link http://localhost:8000/company5";
     } else if (input == "microsoft") {

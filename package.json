@@ -17,15 +17,18 @@
   },
   "homepage": "https://github.com/Himani-Patil/JFST_Project#readme",
   "dependencies": {
-    "ejs": "^3.1.8",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
+    "hbs": "^4.2.0",
     "lodash": "^4.17.21",
+    "mongoose": "^7.0.3",
     "node": "^19.8.1",
     "node-xml-stream": "^1.0.2",
+    "nodemon": "^2.0.22",
     "xml2js": "^0.4.23",
     "xml2js-parser": "^1.1.1",
     "xmlbuilder2": "^3.0.2"
-  },
-  "devDependencies": {}
+  }
 }

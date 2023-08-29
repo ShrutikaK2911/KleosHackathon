@@ -2,122 +2,32 @@
 
 <!-- Landing page -->
 
-    <img src="images/internship2.jpg" class="homeimg">
 
-    <p style="padding-top: 70px; color: #182747; font-size: 30px; font-weight: bolder;">THIRD YEAR 2022-23</p>
+    <img src="images/background.jpeg" class="homeimg">
+<a href="register" style="margin-top: 12px; font-weight: bold; margin:20px; margin-bottom:30px;background-color: #182747;
+border: 1px solid #182747;
+border-radius: 5px;
+padding:15px;
+color: black;
+font-size: 35px;">
+    <button type="button_ax" name="button_ax">Register as a student</button>
+</a>
+
+    <p style="padding-top: 16px; color: #182747; background-color: #dfe8fd;font-size: 45px; font-weight: bolder;">Schedule for Today</p>
     <br><br>
-
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="https://speechly.github.io/browser-ui/latest/push-to-talk-button.js"></script>
-      <script type="text/javascript" src="https://speechly.github.io/browser-ui/latest/big-transcript.js"></script>
-      <script type="text/javascript" src="https://speechly.github.io/browser-ui/latest/error-panel.js"></script>
-        <title>Chat Bot</title>
-
-        <link rel="stylesheet" href="css\chat.css">
-        <link rel="stylesheet" href="css\home.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    </head>
-
-    <body>
-        <!-- CHAT BAR BLOCK -->
-        <big-transcript
-       placement="top" >
-     </big-transcript>
-
-     <push-to-talk-button
-       appid="3191701e-0d84-4d17-8187-cfb75a968e26"
-       placement="bottom" >
-     </push-to-talk-button>
-
-     <error-panel
-       placement="bottom" >
-     </error-panel>
-        <div class="chat-bar-collapsible">
-            <button id="chat-button" type="button" class="collapsible">Chat with us!
-                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
-            </button>
-
-            <div class="content">
-                <div class="full-chat-block">
-                    <!-- Message Container -->
-                    <div class="outer-container">
-                        <div class="chat-container">
-                            <!-- Messages -->
-                            <div id="chatbox">
-                                <h5 id="chat-timestamp"></h5>
-                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                            </div>
-
-                            <!-- User input box -->
-                            <div class="chat-bar-input-block">
-                                <div id="userInput">
-                                    <input id="textInput" class="input-box" type="text" name="msg"
-                                        placeholder="Tap 'Enter' to send a message">
-                                    <p></p>
-                                </div>
-
-                                <div class="chat-bar-icons">
-                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
-                                        onclick="heartButton()"></i>
-                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                        onclick="sendButton()"></i>
-                                </div>
-                            </div>
-
-                            <div id="chat-bar-bottom">
-                                <p></p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts\responses.js"></script>
-    <script src="scripts\chat.js"></script>
-    <script type="text/javascript">
-      window.addEventListener("message", (e) => {
-        if (e.data.type === "speechsegment") {
-          const segment = e.data.segment;
-
-          // Handle speech segment and make tentative changes to app state
-          console.log("speechsegment message:", segment);
-
-          if (segment.isFinal) {
-            // Handle speech segment and make permanent changes to app state
-            // Optionally show confirmation
-            window.postMessage({ type: "speechhandled", success: true }, "*");
-          }
-        }
-      });
-    </script>
-    </html>
-
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "161c1bd8fdf30322da4b026b472fe065427104f60e17394c07f098de648c73b0", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
 
 
 <!-- Images for news ticker -->
 
     <div class="news" id="news1">
-        <img src="images/collegeLogoPhoto.jpg" style="float: left;" height="300px" width="300px">
+        <img src="images/collegeLogoPhoto.jpg" style="float: left;" height="400px" width="350px">
         <div class="newsContent">
-            <h3 style="margin-top: 20px; font-weight: bold;">Orientation Meeting</h3>
-            <p>By college placement cell</p>
-            <p>Today at 3:15 pm</p>
-            <p>Venue: Mechanical Auditorium</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus soluta suscipit accusantium. Animi, tempore porro iste ad illum maiores quasi perspiciatis, sunt laudantium, nobis architecto magnam facilis sit dolorum?</p>
+            <h2 style="margin-top: 20px; font-weight: bold; color:white; margin:20px">Orientation Meeting</h2>
+            <h4 >By college placement cell</h4>
+            <h4>Time: 3:15 pm</h4>
+            <h4>Venue: Mechanical Auditorium</h4>
+            <h4>In this meeting TPO will be discussing schedule and the details of the companies which are going to visit campus.Also, TPO will be guiding students for upcoming internships and placements.</h4>
             <div class="btnDiv">
                 <button class="transitionBtn" style="position: absolute;" onclick="showPrev('news1')"><</button>
                 <button class="transitionBtn" style="position: absolute; margin-left: 60px;" onclick="showNext('news1')">></button>
@@ -126,13 +36,13 @@
     </div>
 
     <div class="news" id="news2" style="display: none;">
-        <img src="images/intelLogo.png" style="float: left;" height="300px" width="300px">
+        <img src="images/intelLogo.png" style="float: left;" height="400px" width="350px">
         <div class="newsContent">
-            <h3 style="margin-top: 20px; font-weight: bold;">Pre Placement Talk</h3>
-            <p>By Team Intel</p>
-            <p>Today at 4:30 pm</p>
-            <p>Venue: Mechanical Auditorium</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus soluta suscipit accusantium. Animi, tempore porro iste ad illum maiores quasi perspiciatis, sunt laudantium, nobis architecto magnam facilis sit dolorum?</p>
+            <h2 style="margin-top: 20px; font-weight: bold;">Pre Placement Talk</h2>
+            <h4>By Team Intel</h4>
+            <h4>Time: 4:30 pm</h4>
+            <h4>Venue: Mechanical Auditorium</h4>
+            <h4>D E Shaw is going to visit today on our campus. So Pre placement talk is compulsory to attend for the students. In this they will be breifing about their hiring process. </h4>
             <div class="btnDiv">
                 <button class="transitionBtn" style="position: absolute;"  onclick="showPrev('news2')"><</button>
                 <button class="transitionBtn" style="position: absolute; margin-left: 60px;" onclick="showNext('news2')">></button>
@@ -141,13 +51,13 @@
     </div>
 
     <div class="news" id="news3" style="display: none;">
-        <img src="images/facebookLogo.png" style="float: left;" height="300px" width="300px">
+        <img src="images/facebookLogo.png" style="float: left;" height="400px" width="350px">
         <div class="newsContent">
-            <h3 style="margin-top: 20px; font-weight: bold;">Coding Test</h3>
-            <p>By Team Facebook</p>
-            <p>Today at 7:00 pm</p>
-            <p>Venue: Online</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus soluta suscipit accusantium. Animi, tempore porro iste ad illum maiores quasi perspiciatis, sunt laudantium, nobis architecto magnam facilis sit dolorum?</p>
+            <h2 style="margin-top: 20px; font-weight: bold;">Coding Test</h2>
+            <h4>By Team Facebook</h4>
+            <h4>Time: 7:00 pm</h4>
+            <h4>Venue: Online</h4>
+            <h4>Facebook company has organised coding test for the students. Those students who are eligible should give this test. Test will start sharp at given time.</h4>
             <div class="btnDiv">
                 <button class="transitionBtn" style="position: absolute;" onclick="showPrev('news3')"><</button>
                 <button class="transitionBtn" style="position: absolute; margin-left: 60px;" onclick="showNext('news3')">></button>
@@ -162,9 +72,9 @@
 
         <!-- Upcoming Events -->
         <div class="upcoming" style="height: 500px; background-color:#dfe8fd; margin-top: 70px; width: 100%;">
-            <p style="padding-top: 70px; color: #182747; font-size: 30px; font-weight: bolder;">UPCOMING SCHEDULE</p>
+            <p style="padding-top: 5px; color: #182747; font-size: 45px; font-weight: bolder;">UPCOMING SCHEDULE</p>
             <br><br>
-            <div class="divTable" style="padding-left: 350px;">
+            <div class="divTable" style="padding-left: 400px;">
                 <table>
                     <tr>
                         <th>DATE</th>
@@ -215,10 +125,10 @@
             <h3 style="font-weight: bold; color: white; padding-top: 20px;">Traning and Placement Officer:</h3>
             <br>
             <img src="images/TPO.jpg" width="150px" height="160px">
-            <p style="font-weight: bold; font-size:large;">Prof. Amit Rajurkar</p><br>
-            <p style="margin-left: 0%; position: absolute; margin-left: 40px;">Landline Direct: 020-25311131/25311132</p><br>
-            <p style="margin-left: 0%; position: absolute; margin-left: 40px;">Mobile: 9822493920</p><br>
-            <p style="margin: 0%; position: absolute; margin-left: 40px;">Email id: placements@cumminscollege.in</p>
+            <p style="font-weight: bold; font-size:large; color:white">Prof. Amit Rajurkar</p><br>
+            <p style="margin-left: 0%; position: absolute; margin-left: 40px; color:white">Landline Direct: 020-25311131/25311132</p><br>
+            <p style="margin-left: 0%; position: absolute; margin-left: 40px; color:white">Mobile: 9822493920</p><br>
+            <p style="margin: 0%; position: absolute; margin-left: 40px; color:white">Email id: placements@cumminscollege.in</p>
         </div>
 
         <div style="border-left: 1px solid white; height: 400px; margin-left: 470px; position: absolute;"></div>
@@ -231,11 +141,10 @@
                 <img src="images/member3.jfif" height="160px" width="140px" style="margin-right: 50px;">
                 <img src="images/member4.jfif" height="160px" width="140px">
             </div>
-            <div style="padding-top: 20px; padding-left: 40px;" ><p style="float: left; margin-right: 100px; margin-left: 50px;">Anna Watson</p><p style="float: left; margin-right: 120px;">Harry Potter</p><p style="float: left; margin-right: 110px;">Lucy Pevensie</p><p style="float: left;">Susan Caspian</p></div>
+            <div style="padding-top: 20px; padding-left: 40px;" ><p style="float: left; margin-right: 100px; margin-left: 50px;color:white">Sarika Joglekar</p><p style="float: left; margin-right: 120px; color:white">Hitendra Kumar</p><p style="float: left; margin-right: 110px; color:white">Chhaya Gosavi</p><p style="float: left; color:white">Sakshi Mandke</p></div>
         </div>
     </div>
-<!--- chatGpt --->
-<!-- Javascript for news ticker -->
+
 
 
 </body>
